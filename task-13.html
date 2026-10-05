@@ -13,6 +13,10 @@
       
       
       
+        <link rel="prev" href="task-8.html">
+      
+      
+        <link rel="next" href="task-19-21.html">
       
       
         
@@ -23,7 +27,7 @@
     
     
       
-        <title>Task 2 - Гайды для ЕГЭ по информатике 2027</title>
+        <title>Задание 13 - Количество программ - Гайды для ЕГЭ по информатике 2027</title>
       
     
     
@@ -75,6 +79,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#13" class="md-skip">
+          Перейти к содержанию
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -105,7 +114,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Task 2
+              Задание 13 - Количество программ
             
           </span>
         </div>
@@ -261,8 +270,10 @@
   
   
   
+    
   
-    <li class="md-tabs__item">
+  
+    <li class="md-tabs__item md-tabs__item--active">
       <a href="task-13.html" class="md-tabs__link">
         
   
@@ -432,10 +443,37 @@
       
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="task-13.html" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Задание 13 - Количество программ
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="task-13.html" class="md-nav__link md-nav__link--active">
         
   
   
@@ -451,6 +489,48 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Содержание">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Содержание
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Что стоит знать перед выполнением
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Задача 1
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -526,6 +606,38 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Содержание
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Что стоит знать перед выполнением
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Задача 1
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -542,9 +654,74 @@
 
 
 
-  <h1>Task 2</h1>
-
-
+<h1 id="13">Задание 13: Количество программ исполнителя<a class="headerlink" href="#13" title="Permanent link">&para;</a></h1>
+<h2 id="_1">Что стоит знать перед выполнением<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<p><strong>Команда</strong> - некое правило, которое превращает текущее число x в новое число, например:</p>
+<ul>
+<li>«прибавь k</li>
+<li>«умножь на k;</li>
+<li>«раздели нацело на k.</li>
+</ul>
+<p><strong>Программа</strong> - последовательность данных правил (команд).</p>
+<p><strong>Траектория вычислений</strong> - последовательность результатов выполнения каждой команды программы. <strong>Стартовое число</strong> в траекторию не входит, а последнее число траектории - это результат работы всей программы.</p>
+<p><strong>Пример:</strong> 
+Команды: 
+- 1: прибавить 6
+- 2: умножить на 4
+- 3: прибавить 7</p>
+<p>Программа: 132  </p>
+<p>Исходное число: 3
+Траектория: 9, 16, 64 (3 + 6 = 9, 9 + 7 = 16, 16 * 4 = 64).</p>
+<p>Если сказано, что траектория содержит число <strong>n</strong> значит: где-то в этой последовательности результатов есть <strong>n</strong>, причём <strong>n</strong> может совпадать и с <strong>конечным числом</strong> - оно тоже часть траектории.</p>
+<hr />
+<h2 id="1">Задача 1<a class="headerlink" href="#1" title="Permanent link">&para;</a></h2>
+<div class="admonition quote">
+<p class="admonition-title">Источник</p>
+<p><strong>ФИПИ</strong> · уровень: средний</p>
+</div>
+<p>Исполнитель Кантата преобразует число на экране.</p>
+<p>У исполнителя есть три команды, которым присвоены номера:</p>
+<p>Прибавить 1.
+Умножить на 2.
+Умножить на 3.
+Первая команда увеличивает число на экране на 1, вторая умножает его на 2, третья умножает его на 3. Программа для исполнителя Кантата - это последовательность команд.</p>
+<p>Сколько существует программ, для которых при исходном числе 5 результатом является число 43 и при этом траектория вычислений содержит число 9, но не содержит число 27?</p>
+<p>Траектория вычислений программы - это последовательность результатов выполнения всех команд программы. Например, для программы 123 при исходном числе 7 траектория будет состоять из чисел 8, 16, 48.</p>
+<h3 id="_2">Решение<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h3>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">functools</span><span class="w"> </span><span class="kn">import</span> <span class="n">lru_cache</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="nd">@lru_cache</span><span class="p">(</span><span class="kc">None</span><span class="p">)</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="k">def</span><span class="w"> </span><span class="nf">f</span><span class="p">(</span><span class="n">n</span><span class="p">,</span> <span class="n">target</span><span class="p">,</span> <span class="n">bad</span><span class="o">=</span><span class="p">()):</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>    <span class="k">if</span> <span class="n">n</span> <span class="ow">in</span> <span class="n">bad</span> <span class="ow">or</span> <span class="n">n</span> <span class="o">&gt;</span> <span class="n">target</span><span class="p">:</span>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>        <span class="k">return</span> <span class="mi">0</span>
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>    <span class="k">if</span> <span class="n">n</span> <span class="o">==</span> <span class="n">target</span><span class="p">:</span>
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>        <span class="k">return</span> <span class="mi">1</span>
+</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>    <span class="k">return</span> <span class="n">f</span><span class="p">(</span><span class="n">n</span> <span class="o">+</span> <span class="mi">1</span><span class="p">,</span> <span class="n">target</span><span class="p">,</span> <span class="n">bad</span><span class="p">)</span> <span class="o">+</span> <span class="n">f</span><span class="p">(</span><span class="n">n</span> <span class="o">*</span> <span class="mi">2</span><span class="p">,</span> <span class="n">target</span><span class="p">,</span> <span class="n">bad</span><span class="p">)</span> <span class="o">+</span> <span class="n">f</span><span class="p">(</span><span class="n">n</span> <span class="o">*</span> <span class="mi">3</span><span class="p">,</span> <span class="n">target</span><span class="p">,</span> <span class="n">bad</span><span class="p">)</span>
+</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>
+</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a><span class="nb">print</span><span class="p">(</span><span class="n">f</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">9</span><span class="p">)</span> <span class="o">*</span> <span class="n">f</span><span class="p">(</span><span class="mi">9</span><span class="p">,</span> <span class="mi">43</span><span class="p">,</span> <span class="p">(</span><span class="mi">27</span><span class="p">,)))</span>
+</span></code></pre></div>
+<p><strong>Что делает код:</strong></p>
+<ul>
+<li><code>@lru_cache</code> - декоратор, который запоминает результаты вызовов функции, чтобы не считать одно и то же дважды.</li>
+<li><code>def f(n, target, bad=()):</code> - объявляем функцию: <code>n</code> - исходное число, <code>target</code> - конечное, <code>bad</code> - кортеж чисел, которые траектория не должна содержать.</li>
+<li><code>if n in bad or n &gt; target</code> - если число находится в списке «исключённых» или больше конечного - возвращаем ноль, такой программы нет.</li>
+<li><code>if n == target</code> - если <code>n</code> - конечное число, то возвращаем 1, значит такая программа есть.</li>
+<li>
+<p><code>return f(n + 1, target, bad) + f(n * 2, target, bad) + f(n * 3, target, bad)</code> - если ни одно из условий выше не сработало, значит мы ещё не дошли до цели и не попали в тупик. Тогда пробуем <strong>все три команды по очереди</strong> и складываем количество программ для каждой:</p>
+<ul>
+<li><code>f(n + 1, target, bad)</code> - сколько программ получится, если первой выполнить команду <strong>«прибавить 1»</strong> (число станет <code>n + 1</code>);</li>
+<li><code>f(n * 2, target, bad)</code> - сколько программ получится, если первой выполнить команду <strong>«умножить на 2»</strong> (число станет <code>n * 2</code>);</li>
+<li><code>f(n * 3, target, bad)</code> - сколько программ получится, если первой выполнить команду <strong>«умножить на 3»</strong> (число станет <code>n * 3</code>).</li>
+</ul>
+<p>Каждое слагаемое - это рекурсивный вызов той же функции, но уже от нового числа. Функция снова спросит: «а сколько программ ведёт из этого нового числа в цель?» - и так до тех пор, пока не упрётся в цель (вернёт 1) или в тупик (вернёт 0).</p>
+<p>Поскольку команды взаимоисключающие (первой может быть только одна из трёх), общее число программ = <strong>сумма</strong> количеств программ для каждого варианта первого хода. Именно поэтому здесь стоит <code>+</code>, а не <code>*</code>.
+- <code>print(f(5, 9) * f(9, 43, (27,)))</code> - для того, чтобы найти, сколько программ содержат число 9, сначала ищем количество программ, которые ведут от 5 к 9 и умножаем на количество программ, которые ведут от 9 к 43, но на пути может встретиться 27, а так как его в траектории быть не должно, передаем кортеж (27,). Если написать без запятой, то передастся целочисленное значение, которое просто заключено в скобки, а не кортеж.</p>
+</li>
+</ul>
+<div class="admonition success">
+<p class="admonition-title">Ответ</p>
+<p><strong>19</strong></p>
+</div>
 
 
 
@@ -575,6 +752,44 @@
       
         <footer class="md-footer">
   
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Нижний колонтитул" >
+        
+          
+          <a href="task-8.html" class="md-footer__link md-footer__link--prev" aria-label="Назад: Задание 8 - Перебор слов">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Назад
+              </span>
+              <div class="md-ellipsis">
+                Задание 8 - Перебор слов
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="task-19-21.html" class="md-footer__link md-footer__link--next" aria-label="Вперед: Задание 19–21 - Теория игр">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Вперед
+              </span>
+              <div class="md-ellipsis">
+                Задание 19–21 - Теория игр
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
     
   
   <div class="md-footer-meta md-typeset">
