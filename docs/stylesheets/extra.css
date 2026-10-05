@@ -1,0 +1,210 @@
+/* ===== Плотность и размеры ===== */
+.md-grid { max-width: 1400px; }
+
+.md-typeset {
+  font-size: 0.78rem;
+  line-height: 1.7;
+}
+
+.md-typeset h1 {
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  margin-bottom: 1.2em;
+}
+
+.md-typeset h2 {
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  margin-top: 2em;
+  padding-bottom: 0.4em;
+  border-bottom: 1px solid var(--md-default-fg-color--lightest);
+}
+
+.md-typeset h3 {
+  font-weight: 600;
+  margin-top: 1.6em;
+}
+
+/* ===== Тёмная тема — как наш кастомный HTML ===== */
+[data-md-color-scheme="slate"] {
+  --md-default-bg-color: #0a0e14;
+  --md-default-bg-color--light: #10161f;
+  --md-default-fg-color: #c9d5e1;
+  --md-default-fg-color--light: #7b8a9c;
+  --md-default-fg-color--lighter: #4a5666;
+  --md-default-fg-color--lightest: #1f2a38;
+  --md-code-bg-color: #0d1117;
+  --md-code-fg-color: #c9d1d9;
+  --md-typeset-color: #c9d5e1;
+  --md-typeset-a-color: #58a6ff;
+  --md-primary-fg-color: #0d1117;
+  --md-primary-bg-color: #e6edf3;
+  --md-accent-fg-color: #79c0ff;
+}
+
+/* Шапка */
+[data-md-color-scheme="slate"] .md-header {
+  background: #0d1117;
+  border-bottom: 1px solid #1f2a38;
+  box-shadow: none;
+}
+
+[data-md-color-scheme="slate"] .md-tabs {
+  background: #0d1117;
+  border-bottom: 1px solid #1f2a38;
+}
+
+/* Сайдбар */
+[data-md-color-scheme="slate"] .md-sidebar__scrollwrap {
+  scrollbar-width: thin;
+}
+
+/* ===== Ссылки ===== */
+.md-typeset a { color: #58a6ff; }
+.md-typeset a:hover { color: #79c0ff; }
+
+/* ===== Заголовки ===== */
+.md-typeset h1,
+.md-typeset h2,
+.md-typeset h3,
+.md-typeset h4 {
+  color: #e6edf3;
+}
+
+/* ===== Инлайн-код ===== */
+.md-typeset code {
+  background: rgba(88, 166, 255, 0.1);
+  color: #79c0ff;
+  border: 1px solid rgba(88, 166, 255, 0.15);
+  border-radius: 5px;
+  padding: 0.1em 0.35em;
+  font-weight: 500;
+  font-size: 0.85em;
+}
+
+.md-typeset pre > code {
+  background: none;
+  border: none;
+  color: #c9d1d9;
+  padding: 0;
+  font-weight: 400;
+}
+
+/* ===== Блоки кода ===== */
+.md-typeset .highlight {
+  border: 1px solid #1f2a38;
+  border-radius: 10px;
+  overflow: hidden;
+  background: #0d1117;
+}
+
+.md-typeset .highlight pre {
+  margin: 0;
+}
+
+/* ===== Admonitions — строгие ===== */
+.md-typeset .admonition,
+.md-typeset details {
+  border-radius: 10px;
+  border-width: 1px;
+  font-size: 0.9em;
+  box-shadow: none;
+  border-left-width: 3px;
+}
+
+/* ===== Таблицы ===== */
+.md-typeset table:not([class]) {
+  border: 1px solid #1f2a38;
+  border-radius: 10px;
+  overflow: hidden;
+  font-size: 0.85em;
+  display: table;
+  width: 100%;
+}
+
+.md-typeset table:not([class]) th {
+  background: #161b22;
+  color: #79c0ff;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 0.78em;
+  letter-spacing: 0.03em;
+  padding: 0.7em 0.9em;
+}
+
+.md-typeset table:not([class]) td {
+  padding: 0.7em 0.9em;
+  border-top: 1px solid #1f2a38;
+}
+
+.md-typeset table:not([class]) tr:hover {
+  background: rgba(88, 166, 255, 0.04);
+}
+
+/* ===== Сайдбар — компактнее ===== */
+.md-nav {
+  font-size: 0.72rem;
+}
+
+.md-nav__title {
+  font-weight: 700;
+}
+
+.md-nav__link--active {
+  color: #79c0ff !important;
+  font-weight: 600;
+}
+
+/* ===== Оглавление справа ===== */
+.md-nav--secondary .md-nav__title {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #7b8a9c;
+}
+
+/* ===== Кнопка «наверх» ===== */
+.md-top {
+  background: #58a6ff;
+  color: #0a0e14;
+  border-radius: 8px;
+  box-shadow: 0 8px 24px rgba(88, 166, 255, 0.35);
+}
+
+.md-top:hover {
+  background: #79c0ff;
+}
+
+/* ===== Поиск ===== */
+[data-md-color-scheme="slate"] .md-search__form {
+  background: #10161f;
+  border: 1px solid #1f2a38;
+  border-radius: 8px;
+}
+
+[data-md-color-scheme="slate"] .md-search__input {
+  color: #c9d5e1;
+}
+
+/* ===== Скроллбар ===== */
+::-webkit-scrollbar { width: 10px; height: 10px; }
+::-webkit-scrollbar-track { background: #0a0e14; }
+::-webkit-scrollbar-thumb {
+  background: #263243;
+  border-radius: 10px;
+  border: 2px solid #0a0e14;
+}
+::-webkit-scrollbar-thumb:hover { background: #35465c; }
+
+/* ===== Футер ===== */
+.md-footer {
+  background: #0d1117;
+  border-top: 1px solid #1f2a38;
+}
+
+/* ===== Адаптивность ===== */
+@media (max-width: 640px) {
+  .md-typeset { font-size: 0.75rem; }
+  .md-typeset h1 { font-size: 1.8em; }
+  .md-typeset h2 { font-size: 1.4em; }
+}
