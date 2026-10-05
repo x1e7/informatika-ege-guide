@@ -208,3 +208,27 @@
   .md-typeset h1 { font-size: 1.8em; }
   .md-typeset h2 { font-size: 1.4em; }
 }
+
+/* ===== Светлая тема: контрастные заголовки ===== */
+[data-md-color-scheme="default"] .md-typeset h1,
+[data-md-color-scheme="default"] .md-typeset h2,
+[data-md-color-scheme="default"] .md-typeset h3,
+[data-md-color-scheme="default"] .md-typeset h4,
+[data-md-color-scheme="default"] .md-typeset h5,
+[data-md-color-scheme="default"] .md-typeset h6 {
+    color: #0a0e14;
+}
+
+/* Основной текст — тоже контрастнее (по желанию) */
+[data-md-color-scheme="default"] .md-typeset {
+    color: #1f2328;
+}
+
+/* Ссылки — не бледные */
+[data-md-color-scheme="default"] .md-typeset a {
+    color: #0969da;
+}
+
+[data-md-color-scheme="default"] .md-typeset a:hover {
+    color: #0550ae;
+}
