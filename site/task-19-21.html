@@ -765,7 +765,7 @@
 
 
 <h1 id="1921">Задание 19–21: Теория игр<a class="headerlink" href="#1921" title="Permanent link">&para;</a></h1>
-<p>Разбор заданий 19, 20 и 21 ЕГЭ по информатике — теория игр, две кучи, рекурсивный перебор.</p>
+<p>Разбор заданий 19, 20 и 21 ЕГЭ по информатике - теория игр, две кучи, рекурсивный перебор.</p>
 <div class="admonition quote">
 <p class="admonition-title">Источник</p>
 <p>Материал основан на руководстве <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=3724528874" target="_blank">«Как решать задание № 19, 20, 21 ЕГЭ по информатике? (Python)»</a> из Steam Community.</p>
@@ -799,7 +799,7 @@
 <p>В большинстве вариантов ЕГЭ используется <strong>Тип А</strong>, даже если в условии упоминается «неудачный ход». Всегда ориентируйтесь на точную формулировку из официального задания.</p>
 </div>
 <h3 id="_3">Логика решения (на примере)<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h3>
-<p>Имеется игровая позиция, характеризуемая целым числом <strong>S</strong> — текущее количество камней. Начальное значение <code>1 ≤ S ≤ 125</code>. Игроки (Петя и Ваня) ходят по очереди, первый ход делает Петя.</p>
+<p>Имеется игровая позиция, характеризуемая целым числом <strong>S</strong> - текущее количество камней. Начальное значение <code>1 ≤ S ≤ 125</code>. Игроки (Петя и Ваня) ходят по очереди, первый ход делает Петя.</p>
 <p><strong>Допустимые ходы из позиции S:</strong></p>
 <ul>
 <li><code>f₁(S) = S + 2</code></li>
@@ -837,10 +837,10 @@
 <p>Позиция S выигрышна за 1 ход, если хотя бы одно из значений <code>S+2</code>, <code>S+4</code>, <code>S·2</code> не меньше 125.</p>
 <ul>
 <li>Умножение (сильнейшее): <code>2S ≥ 125 ⇒ S ≥ 62.5</code> → <strong>S ≥ 63</strong></li>
-<li>Сложение с 4: <code>S+4 ≥ 125 ⇒ S ≥ 121</code> — покрывается</li>
-<li>Сложение с 2: <code>S+2 ≥ 125 ⇒ S ≥ 123</code> — покрывается</li>
+<li>Сложение с 4: <code>S+4 ≥ 125 ⇒ S ≥ 121</code> - покрывается</li>
+<li>Сложение с 2: <code>S+2 ≥ 125 ⇒ S ≥ 123</code> - покрывается</li>
 </ul>
-<p><strong>Все позиции S ≥ 63 — выигрышные за 1 ход.</strong> Позиции <code>S ≤ 62</code> не дают немедленной победы.</p>
+<p><strong>Все позиции S ≥ 63 - выигрышные за 1 ход.</strong> Позиции <code>S ≤ 62</code> не дают немедленной победы.</p>
 <p><strong>Шаг 2. Анализ позиций S ≤ 62</strong></p>
 <p>Нам нужно, чтобы любой ход Пети из S приводил к позиции <code>S' ∈ [63; 124]</code>. При этом Ваня из любой полученной S' должен выиграть за 1 ход, то есть <code>S'·2 ≥ 125 ⇒ S' ≥ 63</code>.</p>
 <p><strong>Шаг 3. Поиск минимального S</strong></p>
@@ -850,7 +850,7 @@
 <li><code>S + 4 ≥ 63 ⇒ S ≥ 59</code></li>
 <li><code>S × 2 ≥ 63 ⇒ S ≥ 31.5 → S ≥ 32</code></li>
 </ul>
-<p>Самое сильное ограничение — <code>+2</code>, значит <strong>S ≥ 61</strong>.</p>
+<p>Самое сильное ограничение - <code>+2</code>, значит <strong>S ≥ 61</strong>.</p>
 <p><strong>Проверка S = 61:</strong></p>
 <ul>
 <li><code>61+2 = 63</code> → Ваня умножает: <code>126 ≥ 125</code> ✓</li>
@@ -867,7 +867,7 @@
 <p class="admonition-title">Условие типа Б</p>
 <p>Петя не может выиграть за один ход. Известно, что Ваня выиграл своим первым ходом после <em>неудачного</em> первого хода Пети. Укажите минимальное значение S, при котором такая ситуация возможна.</p>
 </div>
-<p>Позиции <code>S ≥ 63</code> выигрышны за 1 ход, <code>S ≤ 62</code> — нет.</p>
+<p>Позиции <code>S ≥ 63</code> выигрышны за 1 ход, <code>S ≤ 62</code> - нет.</p>
 <p>Нам нужно минимальное <code>S ≤ 62</code>, при котором хотя бы один ход Пети приводит к <code>S' ∈ [63; 124]</code>.</p>
 <p>Условие для умножения: <code>S·2 ≥ 63 ⇒ S ≥ 32</code>.</p>
 <p><strong>Проверка S = 32:</strong></p>
@@ -883,7 +883,7 @@
 </div>
 <div class="admonition danger">
 <p class="admonition-title">Важное правило</p>
-<p>Если Петя <strong>любым своим ходом</strong> создает ситуацию, из которой Ваня выигрывает за 1 ход — это проигрыш Пети.</p>
+<p>Если Петя <strong>любым своим ходом</strong> создает ситуацию, из которой Ваня выигрывает за 1 ход - это проигрыш Пети.</p>
 </div>
 <hr />
 <h2 id="_7">Типы заданий<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h2>
@@ -898,18 +898,18 @@
 <tbody>
 <tr>
 <td><strong>Одна куча, только плюсуем или умножаем</strong></td>
-<td>Есть куча камней. За ход можно добавить камней или умножить кучу. Кто первый набрал N — победил.</td>
+<td>Есть куча камней. За ход можно добавить камней или умножить кучу. Кто первый набрал N - победил.</td>
 <td>Самый частый тип. Всё считается в одну переменную.</td>
 </tr>
 <tr>
 <td><strong>Одна куча, убавляем или делим</strong></td>
-<td>Кучу можно уменьшать: отнять, поделить. Цель — оставить 1 камень или загнать в тупик.</td>
+<td>Кучу можно уменьшать: отнять, поделить. Цель - оставить 1 камень или загнать в тупик.</td>
 <td>Проверять чётность, делимость.</td>
 </tr>
 <tr>
 <td><strong>Две кучи</strong></td>
 <td>Две кучи, ходить можно в любую. Победа по сумме.</td>
-<td>Обычно одну кучу фиксируют — задача сводится к одномерной.</td>
+<td>Обычно одну кучу фиксируют - задача сводится к одномерной.</td>
 </tr>
 </tbody>
 </table>
@@ -943,10 +943,10 @@
 </span></code></pre></div>
 <h3 id="any-all">Что означают <code>any()</code> и <code>all()</code><a class="headerlink" href="#any-all" title="Permanent link">&para;</a></h3>
 <ul>
-<li><strong><code>any(m)</code></strong> — «существует хотя бы один выигрышный ход». Используется для Вани, потому что он сам выбирает, как сходить.</li>
-<li><strong><code>all(m)</code></strong> — «все ходы ведут к выигрышу». Используется для Пети в задании 19, потому что он должен проиграть при любом своём выборе.</li>
+<li><strong><code>any(m)</code></strong> - «существует хотя бы один выигрышный ход». Используется для Вани, потому что он сам выбирает, как сходить.</li>
+<li><strong><code>all(m)</code></strong> - «все ходы ведут к выигрышу». Используется для Пети в задании 19, потому что он должен проиграть при любом своём выборе.</li>
 </ul>
-<p>В коде для Пети стоит <code>all(m)</code> — это даёт ответ <strong>61</strong>. Если заменить на <code>any(m)</code>, получим ответ для типа Б: <strong>32</strong>.</p>
+<p>В коде для Пети стоит <code>all(m)</code> - это даёт ответ <strong>61</strong>. Если заменить на <code>any(m)</code>, получим ответ для типа Б: <strong>32</strong>.</p>
 <h3 id="2">Пример 2<a class="headerlink" href="#2" title="Permanent link">&para;</a></h3>
 <p><strong>Задание:</strong> Укажите <strong>количество значений S</strong>, при которых Петя не может выиграть за один ход, но при любом ходе Пети Ваня может выиграть своим первым ходом.</p>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="k">def</span><span class="w"> </span><span class="nf">f</span><span class="p">(</span><span class="n">s</span><span class="p">,</span> <span class="n">k</span><span class="p">):</span>
@@ -966,16 +966,16 @@
 </div>
 <hr />
 <h2 id="_10">Одна куча (− уменьшаем)<a class="headerlink" href="#_10" title="Permanent link">&para;</a></h2>
-<h3 id="1-2025">Пример 1 — демоверсия 2025<a class="headerlink" href="#1-2025" title="Permanent link">&para;</a></h3>
+<h3 id="1-2025">Пример 1 - демоверсия 2025<a class="headerlink" href="#1-2025" title="Permanent link">&para;</a></h3>
 <p><strong>Условие:</strong> Петя и Ваня, одна куча. Ходы: убрать 2, убрать 5, разделить на 3 (с округлением до меньшего). Игра заканчивается, когда камней становится <code>≤ 19</code>. Найти минимальное <code>S (S ≥ 20)</code>, при котором Петя не выигрывает за 1 ход, но при любом ходе Пети Ваня выигрывает своим первым ходом.</p>
 <h4 id="_11">Разбор вручную<a class="headerlink" href="#_11" title="Permanent link">&para;</a></h4>
-<p>Выигрышная позиция за 1 ход — та, из которой можно сразу попасть в <code>≤ 19</code>.</p>
+<p>Выигрышная позиция за 1 ход - та, из которой можно сразу попасть в <code>≤ 19</code>.</p>
 <ul>
 <li>Убрать 2: <code>S − 2 ≤ 19 → S ≤ 21</code></li>
 <li>Убрать 5: <code>S − 5 ≤ 19 → S ≤ 24</code></li>
 <li>Разделить на 3: <code>⌊S/3⌋ ≤ 19 → S ≤ 59</code></li>
 </ul>
-<p>Сильнейшая операция — деление на 3. Значит, все <code>S</code> от 20 до 59 — выигрышные за 1 ход. А <code>S = 60</code> уже нет: <code>60−2=58</code>, <code>60−5=55</code>, <code>60/3=20</code> — все <code>&gt; 19</code>.</p>
+<p>Сильнейшая операция - деление на 3. Значит, все <code>S</code> от 20 до 59 - выигрышные за 1 ход. А <code>S = 60</code> уже нет: <code>60−2=58</code>, <code>60−5=55</code>, <code>60/3=20</code> - все <code>&gt; 19</code>.</p>
 <p>Граница <code>W1 = 60</code>. Нам нужно, чтобы Петя не выигрывал (<code>S ≥ 60</code>), но после любого его хода Ваня выигрывал (<code>S' ≤ 59</code>).</p>
 <p>Все три хода Пети должны давать <code>≤ 59</code>:</p>
 <ul>
@@ -983,7 +983,7 @@
 <li><code>S − 5 ≤ 59 → S ≤ 64</code></li>
 <li><code>⌊S/3⌋ ≤ 59 → S ≤ 179</code></li>
 </ul>
-<p>Самое строгое: <code>S ≤ 61</code>. Вместе с <code>S ≥ 60</code> — кандидаты 60 и 61. Минимальное — <strong>60</strong>.</p>
+<p>Самое строгое: <code>S ≤ 61</code>. Вместе с <code>S ≥ 60</code> - кандидаты 60 и 61. Минимальное - <strong>60</strong>.</p>
 <div class="admonition success">
 <p class="admonition-title">Ответ</p>
 <p>Минимальное <strong>S = 60</strong></p>
@@ -1000,8 +1000,8 @@
 </span><span id="__span-3-9"><a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a>    <span class="k">return</span> <span class="nb">all</span><span class="p">(</span><span class="n">m</span><span class="p">)</span>
 </span><span id="__span-3-10"><a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a><span class="nb">print</span><span class="p">(</span><span class="o">*</span><span class="p">[</span><span class="n">s</span> <span class="k">for</span> <span class="n">s</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">20</span><span class="p">,</span> <span class="mi">1000</span><span class="p">)</span> <span class="k">if</span> <span class="n">f</span><span class="p">(</span><span class="n">s</span><span class="p">,</span> <span class="mi">2</span><span class="p">)])</span>
 </span></code></pre></div>
-<h3 id="2-2025">Пример 2 — основная волна 2025<a class="headerlink" href="#2-2025" title="Permanent link">&para;</a></h3>
-<p><strong>Условие:</strong> Можно убрать 3, убрать 6 или поделить на 3 (с округлением до меньшего). Кто первый сделал кучу <code>≤ 25</code> — победил. <code>S &gt; 25</code>.</p>
+<h3 id="2-2025">Пример 2 - основная волна 2025<a class="headerlink" href="#2-2025" title="Permanent link">&para;</a></h3>
+<p><strong>Условие:</strong> Можно убрать 3, убрать 6 или поделить на 3 (с округлением до меньшего). Кто первый сделал кучу <code>≤ 25</code> - победил. <code>S &gt; 25</code>.</p>
 <div class="admonition warning">
 <p class="admonition-title">Внимание</p>
 <p>В условии <code>S &gt; 25</code>, а не <code>S ≥ 25</code>. Поэтому цикл начинается с <strong>26</strong>, а не с 25.</p>
@@ -1024,7 +1024,7 @@
 <ul>
 <li><strong>Ходов больше:</strong> для каждой кучи свои операции. Обычно 4 варианта хода.</li>
 <li><strong>Победа по сумме:</strong> игра заканчивается, когда <em>сумма</em> камней достигает порога.</li>
-<li><strong>Одна куча часто зафиксирована:</strong> «в первой куче 13 камней, во второй — S». Сводит задачу к одномерной.</li>
+<li><strong>Одна куча часто зафиксирована:</strong> «в первой куче 13 камней, во второй - S». Сводит задачу к одномерной.</li>
 </ul>
 <h3 id="1_1">Пример 1<a class="headerlink" href="#1_1" title="Permanent link">&para;</a></h3>
 <p><strong>Условие:</strong> В первой куче 13 камней, во второй S (1 ≤ S ≤ 103). За ход можно добавить 1 в любую кучу или умножить любую на 2. Победа при сумме ≥ 117. Найти минимальное S, при котором Петя не выигрывает за 1 ход, но Ваня выигрывает своим первым ходом после <strong>неудачного</strong> хода Пети.</p>
@@ -1060,10 +1060,10 @@
 </div>
 <hr />
 <h2 id="20">Задание 20<a class="headerlink" href="#20" title="Permanent link">&para;</a></h2>
-<p>Задание 20 отличается от 19 всего одной строкой в конце — в код для 19 достаточно добавить проверку на второй ход.</p>
+<p>Задание 20 отличается от 19 всего одной строкой в конце - в код для 19 достаточно добавить проверку на второй ход.</p>
 <div class="admonition info">
 <p class="admonition-title">Главное отличие</p>
-<p>В 20-м задании Петя <strong>не выигрывает сразу</strong>, но у него есть стратегия, позволяющая <strong>гарантированно выиграть своим вторым ходом</strong> — независимо от того, как сходит Ваня.</p>
+<p>В 20-м задании Петя <strong>не выигрывает сразу</strong>, но у него есть стратегия, позволяющая <strong>гарантированно выиграть своим вторым ходом</strong> - независимо от того, как сходит Ваня.</p>
 </div>
 <h3 id="_15">Что это значит<a class="headerlink" href="#_15" title="Permanent link">&para;</a></h3>
 <ol>
@@ -1071,25 +1071,25 @@
 <li>Ваня делает свой ход (может сходить по-разному).</li>
 <li>Петя делает второй ход и <strong>в любом случае</strong> побеждает.</li>
 </ol>
-<h3 id="1_2">Пример 1 — одна куча<a class="headerlink" href="#1_2" title="Permanent link">&para;</a></h3>
+<h3 id="1-">Пример 1 - одна куча<a class="headerlink" href="#1-" title="Permanent link">&para;</a></h3>
 <p>Добавляем в конец кода для 19 задания строку:</p>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="nb">print</span><span class="p">(</span><span class="o">*</span><span class="p">[</span><span class="n">s</span> <span class="k">for</span> <span class="n">s</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">313</span><span class="p">)</span> <span class="k">if</span> <span class="ow">not</span> <span class="n">f</span><span class="p">(</span><span class="n">s</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span> <span class="ow">and</span> <span class="n">f</span><span class="p">(</span><span class="n">s</span><span class="p">,</span> <span class="mi">3</span><span class="p">)])</span>
 </span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a><span class="c1"># Петя не выигрывает за первый ход, но побеждает своим вторым</span>
 </span></code></pre></div>
-<p>В ответе требуют наименьшее и наибольшее значения S — ответ <strong>100 102</strong>. Но обычно спрашивают минимальное или два минимальных. Читайте, что от вас требуют.</p>
-<h3 id="2_2">Пример 2 — две кучи<a class="headerlink" href="#2_2" title="Permanent link">&para;</a></h3>
+<p>В ответе требуют наименьшее и наибольшее значения S - ответ <strong>100 102</strong>. Но обычно спрашивают минимальное или два минимальных. Читайте, что от вас требуют.</p>
+<h3 id="2-">Пример 2 - две кучи<a class="headerlink" href="#2-" title="Permanent link">&para;</a></h3>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="nb">print</span><span class="p">(</span><span class="o">*</span><span class="p">[</span><span class="n">s</span> <span class="k">for</span> <span class="n">s</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">94</span><span class="p">)</span> <span class="k">if</span> <span class="ow">not</span> <span class="n">f</span><span class="p">(</span><span class="n">s</span><span class="p">,</span> <span class="mi">13</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span> <span class="ow">and</span> <span class="n">f</span><span class="p">(</span><span class="n">s</span><span class="p">,</span> <span class="mi">13</span><span class="p">,</span> <span class="mi">3</span><span class="p">)])</span>
 </span></code></pre></div>
 <hr />
 <h2 id="21">Задание 21<a class="headerlink" href="#21" title="Permanent link">&para;</a></h2>
-<p>В 20-м задании Петя выигрывал вторым ходом, в 21-м — ситуация зеркальная: <strong>Ваня</strong> имеет стратегию, чтобы выиграть первым или вторым ходом, но не может гарантированно выиграть сразу.</p>
+<p>В 20-м задании Петя выигрывал вторым ходом, в 21-м - ситуация зеркальная: <strong>Ваня</strong> имеет стратегию, чтобы выиграть первым или вторым ходом, но не может гарантированно выиграть сразу.</p>
 <h3 id="_16">Что это значит<a class="headerlink" href="#_16" title="Permanent link">&para;</a></h3>
 <ol>
 <li>Петя делает первый ход.</li>
-<li>Если Петя ошибается — Ваня <strong>сразу</strong> выигрывает (первым ходом).</li>
-<li>Если Петя играет хорошо — Ваня всё равно выигрывает, но <strong>вторым ходом</strong>.</li>
+<li>Если Петя ошибается - Ваня <strong>сразу</strong> выигрывает (первым ходом).</li>
+<li>Если Петя играет хорошо - Ваня всё равно выигрывает, но <strong>вторым ходом</strong>.</li>
 </ol>
-<p>То есть у Вани есть «подушка безопасности»: не получилось выиграть сразу — добьёт следующим ходом.</p>
+<p>То есть у Вани есть «подушка безопасности»: не получилось выиграть сразу - добьёт следующим ходом.</p>
 <h3 id="_17">Пример<a class="headerlink" href="#_17" title="Permanent link">&para;</a></h3>
 <p>Добавляем в конец кода строку:</p>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="nb">print</span><span class="p">(</span><span class="o">*</span><span class="p">[</span><span class="n">s</span> <span class="k">for</span> <span class="n">s</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">206</span><span class="p">)</span> <span class="k">if</span> <span class="ow">not</span> <span class="n">f</span><span class="p">(</span><span class="n">s</span><span class="p">,</span> <span class="mi">17</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span> <span class="ow">and</span> <span class="n">f</span><span class="p">(</span><span class="n">s</span><span class="p">,</span> <span class="mi">17</span><span class="p">,</span> <span class="mi">4</span><span class="p">)])</span>
@@ -1101,7 +1101,7 @@
 </div>
 <div class="admonition success">
 <p class="admonition-title">Удачи!</p>
-<p>Главное — понять логику 19-го задания. Дальше 20 и 21 решаются почти автоматически.</p>
+<p>Главное - понять логику 19-го задания. Дальше 20 и 21 решаются почти автоматически.</p>
 </div>
 
 
