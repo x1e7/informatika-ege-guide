@@ -15,6 +15,13 @@
 - Структура и примеры - результат **личной подготовки** к экзамену.
 - Публикация **не подразумевает** образовательной ценности для других - это просто «конспекты» в облаке.
 
+## Локальный запуск
+
+```bash
+pip install -r requirements.txt
+mkdocs serve
+```
+
 ## Технологии
 
 - [MkDocs](https://www.mkdocs.org/) + [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/)
