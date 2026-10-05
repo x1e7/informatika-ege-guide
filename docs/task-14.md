@@ -26,7 +26,7 @@
 ### Решение
 
 ```python
-alphabet = '0123456789abcdefghijklmnopqrstuvwxyz'[:22]
+alphabet = ''.join(sorted("0123456789qwertyuiopasdfghjklzxcvbnm"))[:22]
 
 for x in alphabet:
     n = int(f'27{x}98876', 22) + int(f'26{x}51', 22) + int(f'711{x}5', 22)
