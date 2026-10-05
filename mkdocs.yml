@@ -10,15 +10,15 @@ theme:
   palette:
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
-      primary: black
-      accent: blue
+      primary: custom
+      accent: custom
       toggle:
         icon: material/weather-sunny
         name: Светлая тема
     - media: "(prefers-color-scheme: light)"
       scheme: default
-      primary: black
-      accent: blue
+      primary: custom
+      accent: custom
       toggle:
         icon: material/weather-night
         name: Тёмная тема
@@ -26,10 +26,10 @@ theme:
     text: Inter
     code: JetBrains Mono
   features:
-    - navigation.tabs
     - navigation.sections
     - navigation.top
-    - navigation.footer
+    - navigation.indexes
+    - navigation.footer          # ← вернули кнопки назад/вперёд
     - content.code.copy
     - content.code.annotate
     - search.suggest
