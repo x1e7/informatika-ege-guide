@@ -1,4 +1,4 @@
-site_name: Гайды для ЕГЭ по информатике
+site_name: Гайды для ЕГЭ по информатике 2027
 site_description: Разборы заданий на Python
 site_author: x1e7
 
@@ -36,6 +36,7 @@ theme:
     - toc.follow
 
 markdown_extensions:
+  - attr_list
   - admonition
   - pymdownx.details
   - pymdownx.superfences
@@ -50,6 +51,8 @@ markdown_extensions:
 
 nav:
   - Главная: index.md
+  - Задание 8:
+      - Перебор слов: task-8.md
   - Задание 19–21:
       - Теория: task-19-21/theory.md
       - Одна куча (+): task-19-21/one-pile-plus.md
