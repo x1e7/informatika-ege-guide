@@ -527,6 +527,17 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Задача 2
+      
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -637,6 +648,17 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Задача 2
+      
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -725,6 +747,44 @@
 <div class="admonition success">
 <p class="admonition-title">Ответ</p>
 <p><strong>19</strong></p>
+</div>
+<hr />
+<h2 id="2">Задача 2<a class="headerlink" href="#2" title="Permanent link">&para;</a></h2>
+<div class="admonition quote">
+<p class="admonition-title">Источник</p>
+<p><strong>Профиматика</strong> · уровень: сложный</p>
+</div>
+<p>Исполнитель преобразует число, записанное на экране. У исполнителя есть четыре команды которые обозначены латинскими буквами:</p>
+<p>A. Прибавить 1
+B. Прибавить 2
+С. Прибавить 4
+D. Прибавить 8</p>
+<p>Программа исполнителя — это последовательность команд.</p>
+<p>Сколько существует программ, для которых при исходном числе 16 результатом является число 48, если никакую из команд нельзя повторять дважды подряд?</p>
+<h3 id="_3">Решение<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h3>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">functools</span><span class="w"> </span><span class="kn">import</span> <span class="n">lru_cache</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="nd">@lru_cache</span><span class="p">(</span><span class="kc">None</span><span class="p">)</span>
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="k">def</span><span class="w"> </span><span class="nf">f</span><span class="p">(</span><span class="n">n</span><span class="p">,</span> <span class="n">target</span><span class="p">,</span> <span class="n">last</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>    <span class="k">if</span> <span class="n">n</span> <span class="o">&gt;</span> <span class="n">target</span><span class="p">:</span>
+</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>        <span class="k">return</span> <span class="mi">0</span>
+</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a>    <span class="k">if</span> <span class="n">n</span> <span class="o">==</span> <span class="n">target</span><span class="p">:</span>
+</span><span id="__span-1-8"><a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a>        <span class="k">return</span> <span class="mi">1</span>
+</span><span id="__span-1-9"><a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a>    <span class="n">total</span> <span class="o">=</span> <span class="mi">0</span>
+</span><span id="__span-1-10"><a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a>    <span class="k">for</span> <span class="n">add</span><span class="p">,</span> <span class="n">cmd</span> <span class="ow">in</span> <span class="p">((</span><span class="mi">1</span><span class="p">,</span> <span class="s1">&#39;A&#39;</span><span class="p">),</span> <span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="s1">&#39;B&#39;</span><span class="p">),</span> <span class="p">(</span><span class="mi">4</span><span class="p">,</span> <span class="s1">&#39;C&#39;</span><span class="p">),</span> <span class="p">(</span><span class="mi">8</span><span class="p">,</span> <span class="s1">&#39;D&#39;</span><span class="p">)):</span> <span class="c1"># (сколько добавить, номер команды)</span>
+</span><span id="__span-1-11"><a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a>        <span class="k">if</span> <span class="n">cmd</span> <span class="o">==</span> <span class="n">last</span><span class="p">:</span>      <span class="c1"># нельзя повторять ту же команду подряд, поэтому если текущая команда равна последней - переходим к следующей</span>
+</span><span id="__span-1-12"><a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a>            <span class="k">continue</span>
+</span><span id="__span-1-13"><a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a>        <span class="n">total</span> <span class="o">+=</span> <span class="n">f</span><span class="p">(</span><span class="n">n</span> <span class="o">+</span> <span class="n">add</span><span class="p">,</span> <span class="n">target</span><span class="p">,</span> <span class="n">cmd</span><span class="p">)</span>
+</span><span id="__span-1-14"><a id="__codelineno-1-14" name="__codelineno-1-14" href="#__codelineno-1-14"></a>    <span class="k">return</span> <span class="n">total</span>
+</span><span id="__span-1-15"><a id="__codelineno-1-15" name="__codelineno-1-15" href="#__codelineno-1-15"></a>
+</span><span id="__span-1-16"><a id="__codelineno-1-16" name="__codelineno-1-16" href="#__codelineno-1-16"></a><span class="nb">print</span><span class="p">(</span><span class="n">f</span><span class="p">(</span><span class="mi">16</span><span class="p">,</span> <span class="mi">48</span><span class="p">))</span>
+</span></code></pre></div>
+<p><strong>Что делает код:</strong></p>
+<p>Всё тоже самое, что и в <strong>Задаче 1</strong>, но так как в условии не сказано ничего о числах, которые нужно исключить из траектории - убираем кортеж bad.
+Но вместо него добавляем - last, который хранит последнюю команду. ('A', 'B', 'C', 'D'). По умолчанию None - значит, это первый ход.</p>
+<div class="admonition success">
+<p class="admonition-title">Ответ</p>
+<p><strong>41993</strong></p>
 </div>
 
 
