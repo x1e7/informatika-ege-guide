@@ -1,0 +1,1162 @@
+
+<!doctype html>
+<html lang="ru" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Разборы заданий на Python">
+      
+      
+        <meta name="author" content="x1e7">
+      
+      
+      
+        <link rel="prev" href="task-8.html">
+      
+      
+        <link rel="next" href="recommendations.html">
+      
+      
+        
+      
+      
+      <link rel="icon" href="assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>Задание 19–21 — Теория игр - Гайды для ЕГЭ по информатике 2027</title>
+      
+    
+    
+      <link rel="stylesheet" href="assets/stylesheets/main.ec1eaa64.min.css">
+      
+        
+        <link rel="stylesheet" href="assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300,300i,400,400i,700,700i%7CJetBrains+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Inter";--md-code-font:"JetBrains Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="stylesheets/extra.css">
+    
+    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="blue">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#1921" class="md-skip">
+          Перейти к содержанию
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Верхний колонтитул">
+    <a href="index.html" title="Гайды для ЕГЭ по информатике 2027" class="md-header__button md-logo" aria-label="Гайды для ЕГЭ по информатике 2027" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Гайды для ЕГЭ по информатике 2027
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Задание 19–21 — Теория игр
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="blue"  aria-label="Светлая тема"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Светлая тема" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="black" data-md-color-accent="blue"  aria-label="Тёмная тема"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Тёмная тема" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Поиск" placeholder="Поиск" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Поиск">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Очистить" aria-label="Очистить" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Инициализация поиска
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Вкладки" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="index.html" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Главная
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="task-1.html" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Задание 1 — Схема дорог
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="task-8.html" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Задание 8 — Перебор слов
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    <li class="md-tabs__item md-tabs__item--active">
+      <a href="task-19-21.html" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Задание 19–21 — Теория игр
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="recommendations.html" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Рекомендации
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Навигация" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="index.html" title="Гайды для ЕГЭ по информатике 2027" class="md-nav__button md-logo" aria-label="Гайды для ЕГЭ по информатике 2027" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Гайды для ЕГЭ по информатике 2027
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Главная
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="task-1.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Задание 1 — Схема дорог
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="task-8.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Задание 8 — Перебор слов
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Задание 19–21 — Теория игр
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="task-19-21.html" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Задание 19–21 — Теория игр
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Содержание">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Содержание
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Теория
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Типы заданий
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Одна куча (+ увеличиваем)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Одна куча (− уменьшаем)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_13" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Две кучи
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#20" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Задание 20
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#21" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Задание 21
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="recommendations.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Рекомендации
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Содержание">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Содержание
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Теория
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Типы заданий
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Одна куча (+ увеличиваем)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Одна куча (− уменьшаем)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_13" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Две кучи
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#20" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Задание 20
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#21" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Задание 21
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="1921">Задание 19–21: Теория игр<a class="headerlink" href="#1921" title="Permanent link">&para;</a></h1>
+<p>Разбор заданий 19, 20 и 21 ЕГЭ по информатике — теория игр, две кучи, рекурсивный перебор.</p>
+<div class="admonition quote">
+<p class="admonition-title">Источник</p>
+<p>Материал основан на руководстве <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=3724528874" target="_blank">«Как решать задание № 19, 20, 21 ЕГЭ по информатике? (Python)»</a> из Steam Community.</p>
+</div>
+<hr />
+<h2 id="_1">Теория<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<h3 id="_2">Типы формулировок<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Тип</th>
+<th>Суть условия</th>
+<th>Ключевые слова</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Тип А (классический)</strong></td>
+<td>Петя не выигрывает за 1 ход, но при <em>любом</em> его ходе Ваня выигрывает своим первым ходом.</td>
+<td>«при любом ходе Пети», «независимо от того, как пойдёт Петя»</td>
+</tr>
+<tr>
+<td><strong>Тип Б (редкий)</strong></td>
+<td>Петя не выигрывает за 1 ход, но <em>существует</em> такой его ход, после которого Ваня выигрывает.</td>
+<td>«после неудачного хода Пети», «если Петя ошибётся», «может выиграть»</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="admonition-title">Примечание</p>
+<p>В большинстве вариантов ЕГЭ используется <strong>Тип А</strong>, даже если в условии упоминается «неудачный ход». Всегда ориентируйтесь на точную формулировку из официального задания.</p>
+</div>
+<h3 id="_3">Логика решения (на примере)<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h3>
+<p>Имеется игровая позиция, характеризуемая целым числом <strong>S</strong> — текущее количество камней. Начальное значение <code>1 ≤ S ≤ 125</code>. Игроки (Петя и Ваня) ходят по очереди, первый ход делает Петя.</p>
+<p><strong>Допустимые ходы из позиции S:</strong></p>
+<ul>
+<li><code>f₁(S) = S + 2</code></li>
+<li><code>f₂(S) = S + 4</code></li>
+<li><code>f₃(S) = S × 2</code></li>
+</ul>
+<p>Игра завершается победой текущего игрока, если после его хода количество камней становится <code>S ≥ 125</code> (порог победы, обозначим <code>W = 125</code>).</p>
+<h3 id="_4">Определение выигрышных и проигрышных позиций<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Тип позиции</th>
+<th>Формальное определение</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Выигрышная за 1 ход (W1)</strong></td>
+<td>Позиция S, из которой игрок, делающий ход, может <em>непосредственно</em> достичь порога W. Существует хотя бы один ход <code>f(S) ≥ 125</code>.</td>
+</tr>
+<tr>
+<td><strong>Проигрышная при любом ходе (L)</strong></td>
+<td>Позиция S, из которой <em>все</em> возможные ходы ведут в выигрышные для соперника позиции.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="_5">Алгоритм анализа<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h3>
+<p>В задании 19 требуется найти минимальное <strong>S</strong>, при котором одновременно выполняются два условия:</p>
+<ol>
+<li>Петя <strong>не может выиграть за один ход</strong> (ни один ход Пети не приводит к <code>S' ≥ 125</code>).</li>
+<li>При <em>любом</em> ходе Пети Ваня <strong>может выиграть своим первым ходом</strong> (после хода Пети в позицию <code>S'</code> Ваня имеет хотя бы один ход, приводящий к <code>S' ≥ 125</code>).</li>
+</ol>
+<h3 id="w-125-2-4-2">Пример типа А (W = 125, операции +2, +4, ×2)<a class="headerlink" href="#w-125-2-4-2" title="Permanent link">&para;</a></h3>
+<p><strong>Шаг 1. Интервал выигрышных за 1 ход позиций (W1)</strong></p>
+<p>Позиция S выигрышна за 1 ход, если хотя бы одно из значений <code>S+2</code>, <code>S+4</code>, <code>S·2</code> не меньше 125.</p>
+<ul>
+<li>Умножение (сильнейшее): <code>2S ≥ 125 ⇒ S ≥ 62.5</code> → <strong>S ≥ 63</strong></li>
+<li>Сложение с 4: <code>S+4 ≥ 125 ⇒ S ≥ 121</code> — покрывается</li>
+<li>Сложение с 2: <code>S+2 ≥ 125 ⇒ S ≥ 123</code> — покрывается</li>
+</ul>
+<p><strong>Все позиции S ≥ 63 — выигрышные за 1 ход.</strong> Позиции <code>S ≤ 62</code> не дают немедленной победы.</p>
+<p><strong>Шаг 2. Анализ позиций S ≤ 62</strong></p>
+<p>Нам нужно, чтобы любой ход Пети из S приводил к позиции <code>S' ∈ [63; 124]</code>. При этом Ваня из любой полученной S' должен выиграть за 1 ход, то есть <code>S'·2 ≥ 125 ⇒ S' ≥ 63</code>.</p>
+<p><strong>Шаг 3. Поиск минимального S</strong></p>
+<p>Все три значения после хода Пети должны быть <code>≥ 63</code>:</p>
+<ul>
+<li><code>S + 2 ≥ 63 ⇒ S ≥ 61</code></li>
+<li><code>S + 4 ≥ 63 ⇒ S ≥ 59</code></li>
+<li><code>S × 2 ≥ 63 ⇒ S ≥ 31.5 → S ≥ 32</code></li>
+</ul>
+<p>Самое сильное ограничение — <code>+2</code>, значит <strong>S ≥ 61</strong>.</p>
+<p><strong>Проверка S = 61:</strong></p>
+<ul>
+<li><code>61+2 = 63</code> → Ваня умножает: <code>126 ≥ 125</code> ✓</li>
+<li><code>61+4 = 65</code> → Ваня умножает: <code>130 ≥ 125</code> ✓</li>
+<li><code>2×61 = 122</code> → Ваня умножает: <code>244 ≥ 125</code> ✓</li>
+</ul>
+<p><strong>Проверка S = 60:</strong> Петя может сходить <code>60+2 = 62</code>. Из 62 Ваня не выигрывает за 1 ход (<code>62×2 = 124 &lt; 125</code>). Условие нарушено.</p>
+<div class="admonition success">
+<p class="admonition-title">Ответ для типа А</p>
+<p>Минимальное <strong>S = 61</strong></p>
+</div>
+<h3 id="_6">Тип Б: «после неудачного хода Пети»<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h3>
+<div class="admonition quote">
+<p class="admonition-title">Условие типа Б</p>
+<p>Петя не может выиграть за один ход. Известно, что Ваня выиграл своим первым ходом после <em>неудачного</em> первого хода Пети. Укажите минимальное значение S, при котором такая ситуация возможна.</p>
+</div>
+<p>Позиции <code>S ≥ 63</code> выигрышны за 1 ход, <code>S ≤ 62</code> — нет.</p>
+<p>Нам нужно минимальное <code>S ≤ 62</code>, при котором хотя бы один ход Пети приводит к <code>S' ∈ [63; 124]</code>.</p>
+<p>Условие для умножения: <code>S·2 ≥ 63 ⇒ S ≥ 32</code>.</p>
+<p><strong>Проверка S = 32:</strong></p>
+<ul>
+<li><code>32+2 = 34</code> (Ваня не выигрывает)</li>
+<li><code>32+4 = 36</code> (Ваня не выигрывает)</li>
+<li><code>2×32 = 64</code> → Ваня умножает: <code>128 ≥ 125</code> ✓ <strong>выигрыш!</strong></li>
+</ul>
+<p>При <code>S = 31</code> ни один ход не приводит в интервал <code>[63; 124]</code>.</p>
+<div class="admonition success">
+<p class="admonition-title">Ответ для типа Б</p>
+<p>Минимальное <strong>S = 32</strong></p>
+</div>
+<div class="admonition danger">
+<p class="admonition-title">Важное правило</p>
+<p>Если Петя <strong>любым своим ходом</strong> создает ситуацию, из которой Ваня выигрывает за 1 ход — это проигрыш Пети.</p>
+</div>
+<hr />
+<h2 id="_7">Типы заданий<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Тип</th>
+<th>Что происходит</th>
+<th>На что обратить внимание</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Одна куча, только плюсуем или умножаем</strong></td>
+<td>Есть куча камней. За ход можно добавить камней или умножить кучу. Кто первый набрал N — победил.</td>
+<td>Самый частый тип. Всё считается в одну переменную.</td>
+</tr>
+<tr>
+<td><strong>Одна куча, убавляем или делим</strong></td>
+<td>Кучу можно уменьшать: отнять, поделить. Цель — оставить 1 камень или загнать в тупик.</td>
+<td>Проверять чётность, делимость.</td>
+</tr>
+<tr>
+<td><strong>Две кучи</strong></td>
+<td>Две кучи, ходить можно в любую. Победа по сумме.</td>
+<td>Обычно одну кучу фиксируют — задача сводится к одномерной.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="_8">Одна куча (+ увеличиваем)<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h2>
+<h3 id="1">Пример 1<a class="headerlink" href="#1" title="Permanent link">&para;</a></h3>
+<p>Возьмём тот самый пример из теории.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="k">def</span><span class="w"> </span><span class="nf">f</span><span class="p">(</span><span class="n">s</span><span class="p">,</span> <span class="n">k</span><span class="p">):</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>    <span class="k">if</span> <span class="n">s</span> <span class="o">&gt;=</span> <span class="mi">125</span><span class="p">:</span>
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>        <span class="k">return</span> <span class="n">k</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span>
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>    <span class="k">if</span> <span class="n">k</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>        <span class="k">return</span> <span class="mi">0</span>
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>    <span class="n">m</span> <span class="o">=</span> <span class="p">[</span><span class="n">f</span><span class="p">(</span><span class="n">s</span><span class="o">+</span><span class="mi">2</span><span class="p">,</span> <span class="n">k</span><span class="o">-</span><span class="mi">1</span><span class="p">),</span> <span class="n">f</span><span class="p">(</span><span class="n">s</span><span class="o">+</span><span class="mi">4</span><span class="p">,</span> <span class="n">k</span><span class="o">-</span><span class="mi">1</span><span class="p">),</span> <span class="n">f</span><span class="p">(</span><span class="n">s</span><span class="o">*</span><span class="mi">2</span><span class="p">,</span> <span class="n">k</span><span class="o">-</span><span class="mi">1</span><span class="p">)]</span>
+<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>    <span class="k">if</span> <span class="p">(</span><span class="n">k</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>        <span class="k">return</span> <span class="nb">any</span><span class="p">(</span><span class="n">m</span><span class="p">)</span>
+<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>    <span class="k">return</span> <span class="nb">all</span><span class="p">(</span><span class="n">m</span><span class="p">)</span>
+<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="nb">print</span><span class="p">(</span><span class="o">*</span><span class="p">[</span><span class="n">s</span> <span class="k">for</span> <span class="n">s</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">125</span><span class="p">)</span> <span class="k">if</span> <span class="n">f</span><span class="p">(</span><span class="n">s</span><span class="p">,</span> <span class="mi">2</span><span class="p">)])</span>
+</code></pre></div>
+<h3 id="_9">Код с подробным объяснением<a class="headerlink" href="#_9" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="k">def</span><span class="w"> </span><span class="nf">f</span><span class="p">(</span><span class="n">s</span><span class="p">,</span> <span class="n">k</span><span class="p">):</span>                      <span class="c1"># s - камни в куче, k - сколько ходов осталось</span>
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>    <span class="k">if</span> <span class="n">s</span> <span class="o">&gt;=</span> <span class="mi">125</span><span class="p">:</span>                  <span class="c1"># если игра уже закончилась победой</span>
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>        <span class="k">return</span> <span class="n">k</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span>         <span class="c1"># True, если победил Петя (чётное k), иначе False</span>
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>    <span class="k">if</span> <span class="n">k</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>                    <span class="c1"># ходы кончились, но победа не достигнута</span>
+<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>        <span class="k">return</span> <span class="mi">0</span>                  <span class="c1"># значит, ветка невыигрышная</span>
+<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>    <span class="n">m</span> <span class="o">=</span> <span class="p">[</span><span class="n">f</span><span class="p">(</span><span class="n">s</span><span class="o">+</span><span class="mi">2</span><span class="p">,</span> <span class="n">k</span><span class="o">-</span><span class="mi">1</span><span class="p">),</span> <span class="n">f</span><span class="p">(</span><span class="n">s</span><span class="o">+</span><span class="mi">4</span><span class="p">,</span> <span class="n">k</span><span class="o">-</span><span class="mi">1</span><span class="p">),</span> <span class="n">f</span><span class="p">(</span><span class="n">s</span><span class="o">*</span><span class="mi">2</span><span class="p">,</span> <span class="n">k</span><span class="o">-</span><span class="mi">1</span><span class="p">)]</span>
+<a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a>    <span class="k">if</span> <span class="p">(</span><span class="n">k</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>            <span class="c1"># если следующий ход Пети</span>
+<a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a>        <span class="k">return</span> <span class="nb">any</span><span class="p">(</span><span class="n">m</span><span class="p">)</span>             <span class="c1"># Ваня ищет хотя бы один выигрышный ход</span>
+<a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a>    <span class="k">return</span> <span class="nb">all</span><span class="p">(</span><span class="n">m</span><span class="p">)</span>                 <span class="c1"># Петя должен проиграть при любом ходе</span>
+<a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a>
+<a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a><span class="nb">print</span><span class="p">(</span><span class="o">*</span><span class="p">[</span><span class="n">s</span> <span class="k">for</span> <span class="n">s</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">125</span><span class="p">)</span> <span class="k">if</span> <span class="n">f</span><span class="p">(</span><span class="n">s</span><span class="p">,</span> <span class="mi">2</span><span class="p">)])</span>
+</code></pre></div>
+<h3 id="any-all">Что означают <code>any()</code> и <code>all()</code><a class="headerlink" href="#any-all" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong><code>any(m)</code></strong> — «существует хотя бы один выигрышный ход». Используется для Вани, потому что он сам выбирает, как сходить.</li>
+<li><strong><code>all(m)</code></strong> — «все ходы ведут к выигрышу». Используется для Пети в задании 19, потому что он должен проиграть при любом своём выборе.</li>
+</ul>
+<p>В коде для Пети стоит <code>all(m)</code> — это даёт ответ <strong>61</strong>. Если заменить на <code>any(m)</code>, получим ответ для типа Б: <strong>32</strong>.</p>
+<h3 id="2">Пример 2<a class="headerlink" href="#2" title="Permanent link">&para;</a></h3>
+<p><strong>Задание:</strong> Укажите <strong>количество значений S</strong>, при которых Петя не может выиграть за один ход, но при любом ходе Пети Ваня может выиграть своим первым ходом.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="k">def</span><span class="w"> </span><span class="nf">f</span><span class="p">(</span><span class="n">s</span><span class="p">,</span> <span class="n">k</span><span class="p">):</span>
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>    <span class="k">if</span> <span class="n">s</span> <span class="o">&gt;=</span> <span class="mi">471</span><span class="p">:</span>
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>        <span class="k">return</span> <span class="n">k</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span>
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>    <span class="k">if</span> <span class="n">k</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>        <span class="k">return</span> <span class="mi">0</span>
+<a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>    <span class="n">m</span> <span class="o">=</span> <span class="p">[</span><span class="n">f</span><span class="p">(</span><span class="n">s</span><span class="o">+</span><span class="mi">4</span><span class="p">,</span> <span class="n">k</span><span class="o">-</span><span class="mi">1</span><span class="p">),</span> <span class="n">f</span><span class="p">(</span><span class="n">s</span><span class="o">+</span><span class="mi">7</span><span class="p">,</span> <span class="n">k</span><span class="o">-</span><span class="mi">1</span><span class="p">),</span> <span class="n">f</span><span class="p">(</span><span class="n">s</span><span class="o">*</span><span class="mi">4</span><span class="p">,</span> <span class="n">k</span><span class="o">-</span><span class="mi">1</span><span class="p">)]</span>
+<a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a>    <span class="k">if</span> <span class="p">(</span><span class="n">k</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+<a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a>        <span class="k">return</span> <span class="nb">any</span><span class="p">(</span><span class="n">m</span><span class="p">)</span>
+<a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a>    <span class="k">return</span> <span class="nb">all</span><span class="p">(</span><span class="n">m</span><span class="p">)</span>
+<a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a><span class="nb">print</span><span class="p">(</span><span class="o">*</span><span class="p">[</span><span class="n">s</span> <span class="k">for</span> <span class="n">s</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">471</span><span class="p">)</span> <span class="k">if</span> <span class="n">f</span><span class="p">(</span><span class="n">s</span><span class="p">,</span> <span class="mi">2</span><span class="p">)])</span>
+</code></pre></div>
+<div class="admonition success">
+<p class="admonition-title">Ответ</p>
+<p><strong>4</strong></p>
+</div>
+<hr />
+<h2 id="_10">Одна куча (− уменьшаем)<a class="headerlink" href="#_10" title="Permanent link">&para;</a></h2>
+<h3 id="1-2025">Пример 1 — демоверсия 2025<a class="headerlink" href="#1-2025" title="Permanent link">&para;</a></h3>
+<p><strong>Условие:</strong> Петя и Ваня, одна куча. Ходы: убрать 2, убрать 5, разделить на 3 (с округлением до меньшего). Игра заканчивается, когда камней становится <code>≤ 19</code>. Найти минимальное <code>S (S ≥ 20)</code>, при котором Петя не выигрывает за 1 ход, но при любом ходе Пети Ваня выигрывает своим первым ходом.</p>
+<h4 id="_11">Разбор вручную<a class="headerlink" href="#_11" title="Permanent link">&para;</a></h4>
+<p>Выигрышная позиция за 1 ход — та, из которой можно сразу попасть в <code>≤ 19</code>.</p>
+<ul>
+<li>Убрать 2: <code>S − 2 ≤ 19 → S ≤ 21</code></li>
+<li>Убрать 5: <code>S − 5 ≤ 19 → S ≤ 24</code></li>
+<li>Разделить на 3: <code>⌊S/3⌋ ≤ 19 → S ≤ 59</code></li>
+</ul>
+<p>Сильнейшая операция — деление на 3. Значит, все <code>S</code> от 20 до 59 — выигрышные за 1 ход. А <code>S = 60</code> уже нет: <code>60−2=58</code>, <code>60−5=55</code>, <code>60/3=20</code> — все <code>&gt; 19</code>.</p>
+<p>Граница <code>W1 = 60</code>. Нам нужно, чтобы Петя не выигрывал (<code>S ≥ 60</code>), но после любого его хода Ваня выигрывал (<code>S' ≤ 59</code>).</p>
+<p>Все три хода Пети должны давать <code>≤ 59</code>:</p>
+<ul>
+<li><code>S − 2 ≤ 59 → S ≤ 61</code></li>
+<li><code>S − 5 ≤ 59 → S ≤ 64</code></li>
+<li><code>⌊S/3⌋ ≤ 59 → S ≤ 179</code></li>
+</ul>
+<p>Самое строгое: <code>S ≤ 61</code>. Вместе с <code>S ≥ 60</code> — кандидаты 60 и 61. Минимальное — <strong>60</strong>.</p>
+<div class="admonition success">
+<p class="admonition-title">Ответ</p>
+<p>Минимальное <strong>S = 60</strong></p>
+</div>
+<h4 id="_12">Код<a class="headerlink" href="#_12" title="Permanent link">&para;</a></h4>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="k">def</span><span class="w"> </span><span class="nf">f</span><span class="p">(</span><span class="n">s</span><span class="p">,</span> <span class="n">k</span><span class="p">):</span>
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>    <span class="k">if</span> <span class="n">s</span> <span class="o">&lt;=</span> <span class="mi">19</span><span class="p">:</span>
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>        <span class="k">return</span> <span class="n">k</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span>
+<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>    <span class="k">if</span> <span class="n">k</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a>        <span class="k">return</span> <span class="mi">0</span>
+<a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a>    <span class="n">m</span> <span class="o">=</span> <span class="p">[</span><span class="n">f</span><span class="p">(</span><span class="n">s</span><span class="o">-</span><span class="mi">2</span><span class="p">,</span> <span class="n">k</span><span class="o">-</span><span class="mi">1</span><span class="p">),</span> <span class="n">f</span><span class="p">(</span><span class="n">s</span><span class="o">-</span><span class="mi">5</span><span class="p">,</span> <span class="n">k</span><span class="o">-</span><span class="mi">1</span><span class="p">),</span> <span class="n">f</span><span class="p">(</span><span class="n">s</span><span class="o">//</span><span class="mi">3</span><span class="p">,</span> <span class="n">k</span><span class="o">-</span><span class="mi">1</span><span class="p">)]</span>
+<a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a>    <span class="k">if</span> <span class="p">(</span><span class="n">k</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+<a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a>        <span class="k">return</span> <span class="nb">any</span><span class="p">(</span><span class="n">m</span><span class="p">)</span>
+<a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a>    <span class="k">return</span> <span class="nb">all</span><span class="p">(</span><span class="n">m</span><span class="p">)</span>
+<a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a><span class="nb">print</span><span class="p">(</span><span class="o">*</span><span class="p">[</span><span class="n">s</span> <span class="k">for</span> <span class="n">s</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">20</span><span class="p">,</span> <span class="mi">1000</span><span class="p">)</span> <span class="k">if</span> <span class="n">f</span><span class="p">(</span><span class="n">s</span><span class="p">,</span> <span class="mi">2</span><span class="p">)])</span>
+</code></pre></div>
+<h3 id="2-2025">Пример 2 — основная волна 2025<a class="headerlink" href="#2-2025" title="Permanent link">&para;</a></h3>
+<p><strong>Условие:</strong> Можно убрать 3, убрать 6 или поделить на 3 (с округлением до меньшего). Кто первый сделал кучу <code>≤ 25</code> — победил. <code>S &gt; 25</code>.</p>
+<div class="admonition warning">
+<p class="admonition-title">Внимание</p>
+<p>В условии <code>S &gt; 25</code>, а не <code>S ≥ 25</code>. Поэтому цикл начинается с <strong>26</strong>, а не с 25.</p>
+</div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="k">def</span><span class="w"> </span><span class="nf">f</span><span class="p">(</span><span class="n">s</span><span class="p">,</span> <span class="n">k</span><span class="p">):</span>
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>    <span class="k">if</span> <span class="n">s</span> <span class="o">&lt;=</span> <span class="mi">25</span><span class="p">:</span>
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>        <span class="k">return</span> <span class="n">k</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span>
+<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>    <span class="k">if</span> <span class="n">k</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+<a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a>        <span class="k">return</span> <span class="mi">0</span>
+<a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a>    <span class="n">m</span> <span class="o">=</span> <span class="p">[</span><span class="n">f</span><span class="p">(</span><span class="n">s</span><span class="o">-</span><span class="mi">3</span><span class="p">,</span> <span class="n">k</span><span class="o">-</span><span class="mi">1</span><span class="p">),</span> <span class="n">f</span><span class="p">(</span><span class="n">s</span><span class="o">-</span><span class="mi">6</span><span class="p">,</span> <span class="n">k</span><span class="o">-</span><span class="mi">1</span><span class="p">),</span> <span class="n">f</span><span class="p">(</span><span class="n">s</span><span class="o">//</span><span class="mi">3</span><span class="p">,</span> <span class="n">k</span><span class="o">-</span><span class="mi">1</span><span class="p">)]</span>
+<a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a>    <span class="k">if</span> <span class="p">(</span><span class="n">k</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+<a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a>        <span class="k">return</span> <span class="nb">any</span><span class="p">(</span><span class="n">m</span><span class="p">)</span>
+<a id="__codelineno-4-9" name="__codelineno-4-9" href="#__codelineno-4-9"></a>    <span class="k">return</span> <span class="nb">all</span><span class="p">(</span><span class="n">m</span><span class="p">)</span>
+<a id="__codelineno-4-10" name="__codelineno-4-10" href="#__codelineno-4-10"></a><span class="nb">print</span><span class="p">(</span><span class="o">*</span><span class="p">[</span><span class="n">s</span> <span class="k">for</span> <span class="n">s</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">26</span><span class="p">,</span> <span class="mi">1000</span><span class="p">)</span> <span class="k">if</span> <span class="n">f</span><span class="p">(</span><span class="n">s</span><span class="p">,</span> <span class="mi">2</span><span class="p">)])</span>
+</code></pre></div>
+<hr />
+<h2 id="_13">Две кучи<a class="headerlink" href="#_13" title="Permanent link">&para;</a></h2>
+<h3 id="_14">В чём особенность<a class="headerlink" href="#_14" title="Permanent link">&para;</a></h3>
+<p>Если в задании две кучи, логика та же, только теперь <strong>два числа</strong> вместо одного:</p>
+<ul>
+<li><strong>Ходов больше:</strong> для каждой кучи свои операции. Обычно 4 варианта хода.</li>
+<li><strong>Победа по сумме:</strong> игра заканчивается, когда <em>сумма</em> камней достигает порога.</li>
+<li><strong>Одна куча часто зафиксирована:</strong> «в первой куче 13 камней, во второй — S». Сводит задачу к одномерной.</li>
+</ul>
+<h3 id="1_1">Пример 1<a class="headerlink" href="#1_1" title="Permanent link">&para;</a></h3>
+<p><strong>Условие:</strong> В первой куче 13 камней, во второй S (1 ≤ S ≤ 103). За ход можно добавить 1 в любую кучу или умножить любую на 2. Победа при сумме ≥ 117. Найти минимальное S, при котором Петя не выигрывает за 1 ход, но Ваня выигрывает своим первым ходом после <strong>неудачного</strong> хода Пети.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="k">def</span><span class="w"> </span><span class="nf">f</span><span class="p">(</span><span class="n">s1</span><span class="p">,</span> <span class="n">s2</span><span class="p">,</span> <span class="n">k</span><span class="p">):</span>
+<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>    <span class="k">if</span> <span class="n">s1</span> <span class="o">+</span> <span class="n">s2</span> <span class="o">&gt;=</span> <span class="mi">117</span><span class="p">:</span>
+<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>        <span class="k">return</span> <span class="n">k</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span>
+<a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a>    <span class="k">if</span> <span class="n">k</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+<a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a>        <span class="k">return</span> <span class="mi">0</span>
+<a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a>    <span class="n">m</span> <span class="o">=</span> <span class="p">[</span><span class="n">f</span><span class="p">(</span><span class="n">s1</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span> <span class="n">s2</span><span class="p">,</span> <span class="n">k</span><span class="o">-</span><span class="mi">1</span><span class="p">),</span> <span class="n">f</span><span class="p">(</span><span class="n">s1</span><span class="o">*</span><span class="mi">2</span><span class="p">,</span> <span class="n">s2</span><span class="p">,</span> <span class="n">k</span><span class="o">-</span><span class="mi">1</span><span class="p">),</span>
+<a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a>         <span class="n">f</span><span class="p">(</span><span class="n">s1</span><span class="p">,</span> <span class="n">s2</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span> <span class="n">k</span><span class="o">-</span><span class="mi">1</span><span class="p">),</span> <span class="n">f</span><span class="p">(</span><span class="n">s1</span><span class="p">,</span> <span class="n">s2</span><span class="o">*</span><span class="mi">2</span><span class="p">,</span> <span class="n">k</span><span class="o">-</span><span class="mi">1</span><span class="p">)]</span>
+<a id="__codelineno-5-8" name="__codelineno-5-8" href="#__codelineno-5-8"></a>    <span class="k">if</span> <span class="p">(</span><span class="n">k</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+<a id="__codelineno-5-9" name="__codelineno-5-9" href="#__codelineno-5-9"></a>        <span class="k">return</span> <span class="nb">any</span><span class="p">(</span><span class="n">m</span><span class="p">)</span>
+<a id="__codelineno-5-10" name="__codelineno-5-10" href="#__codelineno-5-10"></a>    <span class="k">return</span> <span class="nb">any</span><span class="p">(</span><span class="n">m</span><span class="p">)</span>
+<a id="__codelineno-5-11" name="__codelineno-5-11" href="#__codelineno-5-11"></a><span class="nb">print</span><span class="p">(</span><span class="o">*</span><span class="p">[</span><span class="n">s</span> <span class="k">for</span> <span class="n">s</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">13</span><span class="p">,</span> <span class="mi">104</span><span class="p">)</span> <span class="k">if</span> <span class="n">f</span><span class="p">(</span><span class="n">s</span><span class="p">,</span> <span class="mi">13</span><span class="p">,</span> <span class="mi">2</span><span class="p">)])</span>
+</code></pre></div>
+<h3 id="2_1">Пример 2<a class="headerlink" href="#2_1" title="Permanent link">&para;</a></h3>
+<p><strong>Условие:</strong> В первой куче 15 камней, во второй S (1 ≤ S ≤ 300). За ход можно добавить 7 в любую кучу или умножить любую на 2. Победа при сумме ≥ 316. Найти <strong>максимальное</strong> S, при котором Петя не может выиграть за один ход, но при любом ходе Пети Ваня выигрывает своим первым ходом.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="k">def</span><span class="w"> </span><span class="nf">f</span><span class="p">(</span><span class="n">s1</span><span class="p">,</span> <span class="n">s2</span><span class="p">,</span> <span class="n">k</span><span class="p">):</span>
+<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>    <span class="k">if</span> <span class="n">s1</span> <span class="o">+</span> <span class="n">s2</span> <span class="o">&gt;=</span> <span class="mi">316</span><span class="p">:</span>
+<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a>        <span class="k">return</span> <span class="n">k</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span>
+<a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a>    <span class="k">if</span> <span class="n">k</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+<a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a>        <span class="k">return</span> <span class="mi">0</span>
+<a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a>    <span class="n">m</span> <span class="o">=</span> <span class="p">[</span><span class="n">f</span><span class="p">(</span><span class="n">s1</span><span class="o">+</span><span class="mi">7</span><span class="p">,</span> <span class="n">s2</span><span class="p">,</span> <span class="n">k</span><span class="o">-</span><span class="mi">1</span><span class="p">),</span> <span class="n">f</span><span class="p">(</span><span class="n">s1</span><span class="o">*</span><span class="mi">2</span><span class="p">,</span> <span class="n">s2</span><span class="p">,</span> <span class="n">k</span><span class="o">-</span><span class="mi">1</span><span class="p">),</span>
+<a id="__codelineno-6-7" name="__codelineno-6-7" href="#__codelineno-6-7"></a>         <span class="n">f</span><span class="p">(</span><span class="n">s1</span><span class="p">,</span> <span class="n">s2</span><span class="o">+</span><span class="mi">7</span><span class="p">,</span> <span class="n">k</span><span class="o">-</span><span class="mi">1</span><span class="p">),</span> <span class="n">f</span><span class="p">(</span><span class="n">s1</span><span class="p">,</span> <span class="n">s2</span><span class="o">*</span><span class="mi">2</span><span class="p">,</span> <span class="n">k</span><span class="o">-</span><span class="mi">1</span><span class="p">)]</span>
+<a id="__codelineno-6-8" name="__codelineno-6-8" href="#__codelineno-6-8"></a>    <span class="k">if</span> <span class="p">(</span><span class="n">k</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+<a id="__codelineno-6-9" name="__codelineno-6-9" href="#__codelineno-6-9"></a>        <span class="k">return</span> <span class="nb">any</span><span class="p">(</span><span class="n">m</span><span class="p">)</span>
+<a id="__codelineno-6-10" name="__codelineno-6-10" href="#__codelineno-6-10"></a>    <span class="k">return</span> <span class="nb">all</span><span class="p">(</span><span class="n">m</span><span class="p">)</span>
+<a id="__codelineno-6-11" name="__codelineno-6-11" href="#__codelineno-6-11"></a><span class="nb">print</span><span class="p">(</span><span class="o">*</span><span class="p">[</span><span class="n">s</span> <span class="k">for</span> <span class="n">s</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">15</span><span class="p">,</span> <span class="mi">301</span><span class="p">)</span> <span class="k">if</span> <span class="n">f</span><span class="p">(</span><span class="n">s</span><span class="p">,</span> <span class="mi">15</span><span class="p">,</span> <span class="mi">2</span><span class="p">)])</span>
+</code></pre></div>
+<div class="admonition success">
+<p class="admonition-title">Ответ</p>
+<p><strong>150</strong></p>
+</div>
+<hr />
+<h2 id="20">Задание 20<a class="headerlink" href="#20" title="Permanent link">&para;</a></h2>
+<p>Задание 20 отличается от 19 всего одной строкой в конце — в код для 19 достаточно добавить проверку на второй ход.</p>
+<div class="admonition info">
+<p class="admonition-title">Главное отличие</p>
+<p>В 20-м задании Петя <strong>не выигрывает сразу</strong>, но у него есть стратегия, позволяющая <strong>гарантированно выиграть своим вторым ходом</strong> — независимо от того, как сходит Ваня.</p>
+</div>
+<h3 id="_15">Что это значит<a class="headerlink" href="#_15" title="Permanent link">&para;</a></h3>
+<ol>
+<li>Петя делает первый ход (и не побеждает).</li>
+<li>Ваня делает свой ход (может сходить по-разному).</li>
+<li>Петя делает второй ход и <strong>в любом случае</strong> побеждает.</li>
+</ol>
+<h3 id="1_2">Пример 1 — одна куча<a class="headerlink" href="#1_2" title="Permanent link">&para;</a></h3>
+<p>Добавляем в конец кода для 19 задания строку:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="nb">print</span><span class="p">(</span><span class="o">*</span><span class="p">[</span><span class="n">s</span> <span class="k">for</span> <span class="n">s</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">313</span><span class="p">)</span> <span class="k">if</span> <span class="ow">not</span> <span class="n">f</span><span class="p">(</span><span class="n">s</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span> <span class="ow">and</span> <span class="n">f</span><span class="p">(</span><span class="n">s</span><span class="p">,</span> <span class="mi">3</span><span class="p">)])</span>
+<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a><span class="c1"># Петя не выигрывает за первый ход, но побеждает своим вторым</span>
+</code></pre></div>
+<p>В ответе требуют наименьшее и наибольшее значения S — ответ <strong>100 102</strong>. Но обычно спрашивают минимальное или два минимальных. Читайте, что от вас требуют.</p>
+<h3 id="2_2">Пример 2 — две кучи<a class="headerlink" href="#2_2" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="nb">print</span><span class="p">(</span><span class="o">*</span><span class="p">[</span><span class="n">s</span> <span class="k">for</span> <span class="n">s</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">94</span><span class="p">)</span> <span class="k">if</span> <span class="ow">not</span> <span class="n">f</span><span class="p">(</span><span class="n">s</span><span class="p">,</span> <span class="mi">13</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span> <span class="ow">and</span> <span class="n">f</span><span class="p">(</span><span class="n">s</span><span class="p">,</span> <span class="mi">13</span><span class="p">,</span> <span class="mi">3</span><span class="p">)])</span>
+</code></pre></div>
+<hr />
+<h2 id="21">Задание 21<a class="headerlink" href="#21" title="Permanent link">&para;</a></h2>
+<p>В 20-м задании Петя выигрывал вторым ходом, в 21-м — ситуация зеркальная: <strong>Ваня</strong> имеет стратегию, чтобы выиграть первым или вторым ходом, но не может гарантированно выиграть сразу.</p>
+<h3 id="_16">Что это значит<a class="headerlink" href="#_16" title="Permanent link">&para;</a></h3>
+<ol>
+<li>Петя делает первый ход.</li>
+<li>Если Петя ошибается — Ваня <strong>сразу</strong> выигрывает (первым ходом).</li>
+<li>Если Петя играет хорошо — Ваня всё равно выигрывает, но <strong>вторым ходом</strong>.</li>
+</ol>
+<p>То есть у Вани есть «подушка безопасности»: не получилось выиграть сразу — добьёт следующим ходом.</p>
+<h3 id="_17">Пример<a class="headerlink" href="#_17" title="Permanent link">&para;</a></h3>
+<p>Добавляем в конец кода строку:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="nb">print</span><span class="p">(</span><span class="o">*</span><span class="p">[</span><span class="n">s</span> <span class="k">for</span> <span class="n">s</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">206</span><span class="p">)</span> <span class="k">if</span> <span class="ow">not</span> <span class="n">f</span><span class="p">(</span><span class="n">s</span><span class="p">,</span> <span class="mi">17</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span> <span class="ow">and</span> <span class="n">f</span><span class="p">(</span><span class="n">s</span><span class="p">,</span> <span class="mi">17</span><span class="p">,</span> <span class="mi">4</span><span class="p">)])</span>
+</code></pre></div>
+<p>Здесь Ваня ходит по чётным ходам, поэтому изменились только цифры 2 и 4 после 17.</p>
+<div class="admonition success">
+<p class="admonition-title">Ответ</p>
+<p><strong>S = 93</strong></p>
+</div>
+<div class="admonition success">
+<p class="admonition-title">Удачи!</p>
+<p>Главное — понять логику 19-го задания. Дальше 20 и 21 решаются почти автоматически.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  К началу
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Нижний колонтитул" >
+        
+          
+          <a href="task-8.html" class="md-footer__link md-footer__link--prev" aria-label="Назад: Задание 8 — Перебор слов">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Назад
+              </span>
+              <div class="md-ellipsis">
+                Задание 8 — Перебор слов
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="recommendations.html" class="md-footer__link md-footer__link--next" aria-label="Вперед: Рекомендации">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Вперед
+              </span>
+              <div class="md-ellipsis">
+                Рекомендации
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": ".", "features": ["navigation.tabs", "navigation.sections", "navigation.top", "navigation.footer", "content.code.copy", "search.suggest", "search.highlight", "toc.follow"], "search": "assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\u0421\u043a\u043e\u043f\u0438\u0440\u043e\u0432\u0430\u043d\u043e \u0432 \u0431\u0443\u0444\u0435\u0440", "clipboard.copy": "\u041a\u043e\u043f\u0438\u0440\u043e\u0432\u0430\u0442\u044c \u0432 \u0431\u0443\u0444\u0435\u0440", "search.result.more.one": "\u0415\u0449\u0451 1 \u043d\u0430 \u044d\u0442\u043e\u0439 \u0441\u0442\u0440\u0430\u043d\u0438\u0446\u0435", "search.result.more.other": "\u0415\u0449\u0451 # \u043d\u0430 \u044d\u0442\u043e\u0439 \u0441\u0442\u0440\u0430\u043d\u0438\u0446\u0435", "search.result.none": "\u0421\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0439 \u043d\u0435 \u043d\u0430\u0439\u0434\u0435\u043d\u043e", "search.result.one": "\u041d\u0430\u0439\u0434\u0435\u043d\u043e 1 \u0441\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0435", "search.result.other": "\u041d\u0430\u0439\u0434\u0435\u043d\u043e \u0441\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0439: #", "search.result.placeholder": "\u041d\u0430\u0447\u043d\u0438\u0442\u0435 \u043f\u0435\u0447\u0430\u0442\u0430\u0442\u044c \u0434\u043b\u044f \u043f\u043e\u0438\u0441\u043a\u0430", "search.result.term.missing": "\u041e\u0442\u0441\u0443\u0442\u0441\u0442\u0432\u0443\u0435\u0442", "select.version": "\u0412\u044b\u0431\u0435\u0440\u0438\u0442\u0435 \u0432\u0435\u0440\u0441\u0438\u044e"}, "version": null}</script>
+    
+    
+      <script src="assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+    
+  </body>
+</html>
