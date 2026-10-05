@@ -51,17 +51,9 @@ markdown_extensions:
 
 nav:
   - Главная: index.md
-  - Задание 1:
-      - Схема дорог: task-1.md
-  - Задание 8:
-      - Перебор слов: task-8.md
-  - Задание 19–21:
-      - Теория: task-19-21/theory.md
-      - Одна куча (+): task-19-21/one-pile-plus.md
-      - Одна куча (−): task-19-21/one-pile-minus.md
-      - Две кучи: task-19-21/two-piles.md
-      - Задание 20: task-19-21/task-20.md
-      - Задание 21: task-19-21/task-21.md
+  - Задание 1 — Схема дорог: task-1.md
+  - Задание 8 — Перебор слов: task-8.md
+  - Задание 19–21 — Теория игр: task-19-21.md
   - Рекомендации: recommendations.md
 
 extra_css:
