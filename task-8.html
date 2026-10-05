@@ -733,7 +733,7 @@
 <h3 id="_2">Решение<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h3>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">itertools</span><span class="w"> </span><span class="kn">import</span> <span class="n">product</span>
 </span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>
-</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="n">words</span> <span class="o">=</span> <span class="n">product</span><span class="p">(</span><span class="s1">&#39;ABCDEX&#39;</span><span class="p">,</span> <span class="n">repeat</span><span class="o">=</span><span class="mi">4</span><span class="p">)</span>   <span class="c1"># repeat=4 — длина слова</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="n">words</span> <span class="o">=</span> <span class="n">product</span><span class="p">(</span><span class="s1">&#39;ABCDEX&#39;</span><span class="p">,</span> <span class="n">repeat</span><span class="o">=</span><span class="mi">4</span><span class="p">)</span>   <span class="c1"># repeat=4 - длина слова</span>
 </span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="n">cnt</span> <span class="o">=</span> <span class="mi">0</span>
 </span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>
 </span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="k">for</span> <span class="n">w</span> <span class="ow">in</span> <span class="n">words</span><span class="p">:</span>
@@ -745,10 +745,10 @@
 </span></code></pre></div>
 <p><strong>Что делает код:</strong></p>
 <ul>
-<li><code>product('ABCDEX', repeat=4)</code> — генерирует <strong>все возможные</strong> 4-буквенные комбинации из 6 букв (<code>6⁴ = 1296</code> вариантов).</li>
-<li><code>''.join(w)</code> — склеивает кортеж символов в строку.</li>
-<li><code>word.count('X') == 1</code> — проверяет, что буква <code>X</code> встречается ровно один раз.</li>
-<li><code>word[0] == 'X' or word[-1] == 'X'</code> — проверяет, что <code>X</code> стоит на первом <strong>или</strong> последнем месте.</li>
+<li><code>product('ABCDEX', repeat=4)</code> - генерирует <strong>все возможные</strong> 4-буквенные комбинации из 6 букв (<code>6⁴ = 1296</code> вариантов).</li>
+<li><code>''.join(w)</code> - склеивает кортеж символов в строку.</li>
+<li><code>word.count('X') == 1</code> - проверяет, что буква <code>X</code> встречается ровно один раз.</li>
+<li><code>word[0] == 'X' or word[-1] == 'X'</code> - проверяет, что <code>X</code> стоит на первом <strong>или</strong> последнем месте.</li>
 </ul>
 <div class="admonition success">
 <p class="admonition-title">Ответ</p>
@@ -770,7 +770,7 @@
 </span></code></pre></div>
 <p>Под каким номером в списке идёт первое слово, которое начинается с букв <code>ГО</code>?</p>
 <h3 id="_3">Решение<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h3>
-<p>Буквы распределяем по алфавиту. Проходим все комбинации в лексикографическом порядке, увеличивая счётчик <code>k</code>. Как только встретили слово, начинающееся на <code>ГО</code> — выводим номер.</p>
+<p>Буквы распределяем по алфавиту. Проходим все комбинации в лексикографическом порядке, увеличивая счётчик <code>k</code>. Как только встретили слово, начинающееся на <code>ГО</code> - выводим номер.</p>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="n">a</span> <span class="o">=</span> <span class="p">{</span><span class="mi">0</span><span class="p">:</span> <span class="s2">&quot;А&quot;</span><span class="p">,</span> <span class="mi">1</span><span class="p">:</span> <span class="s2">&quot;Г&quot;</span><span class="p">,</span> <span class="mi">2</span><span class="p">:</span> <span class="s2">&quot;И&quot;</span><span class="p">,</span> <span class="mi">3</span><span class="p">:</span> <span class="s2">&quot;Л&quot;</span><span class="p">,</span> <span class="mi">4</span><span class="p">:</span> <span class="s2">&quot;М&quot;</span><span class="p">,</span> <span class="mi">5</span><span class="p">:</span> <span class="s2">&quot;О&quot;</span><span class="p">,</span> <span class="mi">6</span><span class="p">:</span> <span class="s2">&quot;Р&quot;</span><span class="p">,</span> <span class="mi">7</span><span class="p">:</span> <span class="s2">&quot;Т&quot;</span><span class="p">}</span>
 </span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="n">k</span> <span class="o">=</span> <span class="mi">0</span>
 </span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>
@@ -784,10 +784,10 @@
 </span></code></pre></div>
 <p><strong>Как это работает:</strong></p>
 <ul>
-<li><code>a</code> — словарь, где ключ — номер буквы в алфавите, значение — сама буква.</li>
+<li><code>a</code> - словарь, где ключ - номер буквы в алфавите, значение - сама буква.</li>
 <li>Вложенные циклы перебирают <strong>все комбинации</strong> в правильном лексикографическом порядке: сначала меняется последний индекс <code>m</code>, потом <code>g</code>, потом <code>j</code>, потом <code>i</code>.</li>
-<li><code>k</code> — счётчик, увеличивается на каждой итерации внутреннего цикла.</li>
-<li>Как только первые две буквы — <code>Г</code> и <code>О</code>, выводим <code>k</code>.</li>
+<li><code>k</code> - счётчик, увеличивается на каждой итерации внутреннего цикла.</li>
+<li>Как только первые две буквы - <code>Г</code> и <code>О</code>, выводим <code>k</code>.</li>
 </ul>
 <div class="admonition note">
 <p class="admonition-title">Почему алфавит именно такой</p>
@@ -815,9 +815,9 @@
 </span></code></pre></div>
 <p><strong>Что важно:</strong></p>
 <ul>
-<li><code>product('света', repeat=5)</code> — все 5-буквенные комбинации из 5 букв (<code>5⁵ = 3125</code>).</li>
-<li><code>word.count('с') &gt;= 1</code> — проверяем, что буква <code>С</code> встречается <strong>хотя бы один раз</strong>.</li>
-<li>⚠️ <code>'с'</code> — <strong>русская</strong> буква, не латинская <code>c</code>. Если случайно написать английскую — программа выведет <code>0</code>.</li>
+<li><code>product('света', repeat=5)</code> - все 5-буквенные комбинации из 5 букв (<code>5⁵ = 3125</code>).</li>
+<li><code>word.count('с') &gt;= 1</code> - проверяем, что буква <code>С</code> встречается <strong>хотя бы один раз</strong>.</li>
+<li>⚠️ <code>'с'</code> - <strong>русская</strong> буква, не латинская <code>c</code>. Если случайно написать английскую - программа выведет <code>0</code>.</li>
 </ul>
 <div class="admonition success">
 <p class="admonition-title">Ответ</p>
@@ -850,8 +850,8 @@
 </span></code></pre></div>
 <p><strong>Что происходит:</strong></p>
 <ul>
-<li>Пять вложенных циклов — по одному на каждую позицию в слове.</li>
-<li><code>a[i] == 'У'</code> — первая буква слова равна <code>У</code>. Как только нашли — печатаем номер и выходим из внутреннего цикла.</li>
+<li>Пять вложенных циклов - по одному на каждую позицию в слове.</li>
+<li><code>a[i] == 'У'</code> - первая буква слова равна <code>У</code>. Как только нашли - печатаем номер и выходим из внутреннего цикла.</li>
 <li>Так как слова идут в лексикографическом порядке, первое слово на <code>У</code> идёт <strong>сразу после</strong> всех слов на <code>А</code>, <code>К</code>, <code>Р</code>.</li>
 </ul>
 <div class="admonition success">
